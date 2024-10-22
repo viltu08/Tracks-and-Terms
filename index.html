@@ -51,6 +51,15 @@
 
         .text-column {
             padding: 20px;
+            text-align: left;
+        }
+
+        .text-column h1,
+        .text-column h2,
+        .text-column p {
+            margin: 0;
+            padding: 0;
+            padding-bottom: 20px;
         }
 
 .home {
@@ -70,8 +79,6 @@
             font-family: 'Khand', sans-serif;
             font-size: 100px;
             line-height: 1;
-            margin: 20px;
-            padding: 20px;
 			color: white;
         }    
 
@@ -79,14 +86,12 @@
             font-family: 'Khand', sans-serif;
             font-size: 40px;
             line-height: 1;
-            margin: 20px;
-            padding: 20px;
         }
 
         .text-column p {
             font-size: 1.2rem;
             line-height: 2;
-word-wrap: break-word;
+            word-wrap: break-word;
         }
 
         .image-column img {
@@ -125,7 +130,7 @@ word-wrap: break-word;
         .s20 { background-color: #B0C4DE;}
 
         /* Media Query for smaller screens */
-     @media (max-width: 768px) {
+@media (max-width: 768px) {
     .scroll-container {
         flex-direction: column;
         overflow-x: hidden;
@@ -137,6 +142,7 @@ word-wrap: break-word;
         height: auto;
         padding: 20px;
         margin: 20px auto;
+        box-sizing: border-box;
     }
 
     .home .text-column {
@@ -144,10 +150,15 @@ word-wrap: break-word;
         top: auto;
         left: auto;
         transform: none;
+        max-width: 100%;
     }
 
     .text-column h1 {
-        font-size: 50px;
+        font-size: 10vw;
+        white-space: normal;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        line-height: 1.2;
     }
 
     .text-column h2 {
@@ -261,15 +272,14 @@ word-wrap: break-word;
             <div class="section-content">
                 <div class="text-column">
                     <h2>Section Title</h2>
-                    <p>Template description text for this section. Replace with relevant content.</p>
-                </div>
+                    <p>Template description text for this section. Replace with relevant content.                </div>
                 <div class="image-column">
                     <img src="your-placeholder-image.jpg" alt="Placeholder Image">
                 </div>
             </div>
         </section>
-		
-		        <section class="s s9">
+
+        <section class="s s9">
             <div class="section-content">
                 <div class="text-column">
                     <h2>Section Title</h2>
@@ -280,8 +290,8 @@ word-wrap: break-word;
                 </div>
             </div>
         </section>
-		
-		        <section class="s s10">
+
+        <section class="s s10">
             <div class="section-content">
                 <div class="text-column">
                     <h2>Section Title</h2>
@@ -292,8 +302,8 @@ word-wrap: break-word;
                 </div>
             </div>
         </section>
-		
-		        <section class="s s11">
+
+        <section class="s s11">
             <div class="section-content">
                 <div class="text-column">
                     <h2>Section Title</h2>
@@ -304,8 +314,8 @@ word-wrap: break-word;
                 </div>
             </div>
         </section>
-		
-		        <section class="s s12">
+
+        <section class="s s12">
             <div class="section-content">
                 <div class="text-column">
                     <h2>Section Title</h2>
@@ -316,8 +326,8 @@ word-wrap: break-word;
                 </div>
             </div>
         </section>
-		
-		        <section class="s s13">
+
+        <section class="s s13">
             <div class="section-content">
                 <div class="text-column">
                     <h2>Section Title</h2>
@@ -328,8 +338,8 @@ word-wrap: break-word;
                 </div>
             </div>
         </section>
-		
-		        <section class="s s14">
+
+        <section class="s s14">
             <div class="section-content">
                 <div class="text-column">
                     <h2>Section Title</h2>
@@ -340,8 +350,8 @@ word-wrap: break-word;
                 </div>
             </div>
         </section>
-		
-		        <section class="s s15">
+
+        <section class="s s15">
             <div class="section-content">
                 <div class="text-column">
                     <h2>Section Title</h2>
@@ -352,8 +362,8 @@ word-wrap: break-word;
                 </div>
             </div>
         </section>
-		
-		        <section class="s s16">
+
+        <section class="s s16">
             <div class="section-content">
                 <div class="text-column">
                     <h2>Section Title</h2>
@@ -364,8 +374,8 @@ word-wrap: break-word;
                 </div>
             </div>
         </section>
-		
-		        <section class="s s17">
+
+        <section class="s s17">
             <div class="section-content">
                 <div class="text-column">
                     <h2>Section Title</h2>
@@ -376,8 +386,8 @@ word-wrap: break-word;
                 </div>
             </div>
         </section>
-		
-		        <section class="s s18">
+
+        <section class="s s18">
             <div class="section-content">
                 <div class="text-column">
                     <h2>Section Title</h2>
@@ -388,8 +398,8 @@ word-wrap: break-word;
                 </div>
             </div>
         </section>
-		
-		        <section class="s s19">
+
+        <section class="s s19">
             <div class="section-content">
                 <div class="text-column">
                     <h2>Section Title</h2>
@@ -415,3 +425,4 @@ word-wrap: break-word;
     </div>
 </body>
 </html>
+
