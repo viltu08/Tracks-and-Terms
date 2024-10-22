@@ -35,11 +35,10 @@
             display: flex;
             flex: none;
             width: 25vw;
-            scroll-snap-align: start;
             justify-content: center;
             align-items: center;
             border-radius: 10px;
-            margin: 2px;
+            margin: 5px;
         }
 
         .section-content {
@@ -54,24 +53,40 @@
             padding: 20px;
         }
 
+.home {
+    position: relative;
+    background-color: #6495ED;
+}
+
+.home .text-column {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    transform-origin: center;
+    width: max-content;
+}
         .text-column h1 {
             font-family: 'Khand', sans-serif;
             font-size: 100px;
             line-height: 1;
-            margin-bottom: 20px;
-            padding-top: 20px;
+            margin: 20px;
+            padding: 20px;
+			color: white;
         }    
 
         .text-column h2 {
             font-family: 'Khand', sans-serif;
-            font-size: 4rem;
+            font-size: 40px;
             line-height: 1;
-            margin-bottom: 20px;
+            margin: 20px;
+            padding: 20px;
         }
 
         .text-column p {
             font-size: 1.2rem;
             line-height: 2;
+word-wrap: break-word;
         }
 
         .image-column img {
@@ -82,6 +97,10 @@
 
         .home {
             background-color: #6495ED;
+        }
+
+   .home p {
+            color: white;
         }
 
         .s1 { background-color: #4682B4;}
@@ -106,30 +125,39 @@
         .s20 { background-color: #B0C4DE;}
 
         /* Media Query for smaller screens */
-        @media (max-width: 768px) {
-            .scroll-container {
-                flex-direction: column;
-                overflow-x: hidden;
-                height: auto;
-            }
+     @media (max-width: 768px) {
+    .scroll-container {
+        flex-direction: column;
+        overflow-x: hidden;
+        height: auto;
+    }
 
-            .s {
-                width: 100vw;
-                height: auto;
-            }
+    .s {
+        width: calc(100vw - 40px);
+        height: auto;
+        padding: 20px;
+        margin: 20px auto;
+    }
 
-            .text-column h1 {
-                font-size: 50px;
-            }
+    .home .text-column {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+    }
 
-            .text-column h2 {
-                font-size: 2.5rem;
-            }
+    .text-column h1 {
+        font-size: 50px;
+    }
 
-            .text-column p {
-                font-size: 1rem;
-            }
-        }
+    .text-column h2 {
+        font-size: 2.5rem;
+    }
+
+    .text-column p {
+        font-size: 1rem;
+    }
+}
     </style>
 </head>
 <body>
@@ -139,7 +167,6 @@
             <div class="section-content">
                 <div class="text-column">
                     <h1>Tracks & Terms</h1>
-                    <p>A Dictionary for the terms in context of the Indian Railways.</p>
                 </div>
             </div>
         </section>
