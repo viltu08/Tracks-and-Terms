@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracks and Terms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Playwrite IN", cursive;
+            overflow-x: hidden;
+            background-color: #f4f4f4;
+            scroll-behavior: smooth;
+        }
+
+        .scroll-container {
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            height: 100vh;
+            scroll-behavior: smooth;
+        }
+
+        .s {
+            display: flex;
+            flex: none;
+            width: 25vw;
+            scroll-snap-align: start;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            margin: 2px;
+        }
+
+        .section-content {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+            width: 80%;
+            align-items: center;
+        }
+
+        .text-column {
+            padding: 20px;
+        }
+
+        .text-column h1 {
+            font-family: 'Khand', sans-serif;
+            font-size: 100px;
+            line-height: 1;
+            margin-bottom: 20px;
+            padding-top: 20px;
+        }    
+
+        .text-column h2 {
+            font-family: 'Khand', sans-serif;
+            font-size: 4rem;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+
+        .text-column p {
+            font-size: 1.2rem;
+            line-height: 2;
+        }
+
+        .image-column img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .home {
+            background-color: #6495ED;
+        }
+
+        .s1 { background-color: #4682B4;}
+        .s2 { background-color: #F4A460;}
+        .s3 { background-color: #228B22;}
+        .s4 { background-color: #FFD700;}
+        .s5 { background-color: #BC8F8F;}
+        .s6 { background-color: #32CD32;}
+        .s7 { background-color: #A52A2A;}
+        .s8 { background-color: #8FBC8F;}
+        .s9 { background-color: #B22222;}
+        .s10 { background-color: #B8860B;}
+        .s11 { background-color: #556B2F;}
+        .s12 { background-color: #F08080;}
+        .s13 { background-color: #8B4513;}
+        .s14 { background-color: #87CEEB;}
+        .s15 { background-color: #D2691E;}
+        .s16 { background-color: #4682B4;}
+        .s17 { background-color: #DAA520;}
+        .s18 { background-color: #008080;}
+        .s19 { background-color: #556B2F;}
+        .s20 { background-color: #B0C4DE;}
+
+        /* Media Query for smaller screens */
+        @media (max-width: 768px) {
+            .scroll-container {
+                flex-direction: column;
+                overflow-x: hidden;
+                height: auto;
+            }
+
+            .s {
+                width: 100vw;
+                height: auto;
+            }
+
+            .text-column h1 {
+                font-size: 50px;
+            }
+
+            .text-column h2 {
+                font-size: 2.5rem;
+            }
+
+            .text-column p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll-container">
+        <!-- Section 1: Homepage -->
+        <section class="s home">
+            <div class="section-content">
+                <div class="text-column">
+                    <h1>Tracks & Terms</h1>
+                    <p>A Dictionary for the terms in context of the Indian Railways.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 to 20: Template text for all other sections -->
+        <section class="s s1">
+            <div class="section-content">
+                <div class="text-column">
+                    <h2>Section Title</h2>
+                    <p>Template description text for this section. Replace with relevant content.</p>
+                </div>
+                <div class="image-column">
+                    <img src="your-placeholder-image.jpg" alt="Placeholder Image">
+                </div>
+            </div>
+        </section>
+
+        <section class="s s2">
+            <div class="section-content">
+                <div class="text-column">
+                    <h2>Section Title</h2>
+                    <p>Template description text for this section. Replace with relevant content.</p>
+                </div>
+                <div class="image-column">
+                    <img src="your-placeholder-image.jpg" alt="Placeholder Image">
+                </div>
+            </div>
+        </section>
+		
+		        <section class="s s3">
+            <div class="section-content">
+                <div class="text-column">
+                    <h2>Section Title</h2>
+                    <p>Template description text for this section. Replace with relevant content.</p>
+                </div>
+                <div class="image-column">
+                    <img src="your-placeholder-image.jpg" alt="Placeholder Image">
+                </div>
+            </div>
+        </section>
+		
+		        <section class="s s4">
+            <div class="section-content">
+                <div class="text-column">
+                    <h2>Section Title</h2>
+                    <p>Template description text for this section. Replace with relevant content.</p>
+                </div>
+                <div class="image-column">
+                    <img src="your-placeholder-image.jpg" alt="Placeholder Image">
+                </div>
+            </div>
+        </section>
+		
+		        <section class="s s5">
+            <div class="section-content">
+                <div class="text-column">
+                    <h2>Section Title</h2>
+                    <p>Template description text for this section. Replace with relevant content.</p>
+                </div>
+                <div class="image-column">
+                    <img src="your-placeholder-image.jpg" alt="Placeholder Image">
+                </div>
+            </div>
+        </section>
+		
+		        <section class="s s6">
+            <div class="section-content">
+                <div class="text-column">
+                    <h2>Section Title</h2>
+                    <p>Template description text for this section. Replace with relevant content.</p>
+                </div>
+                <div class="image-column">
+                    <img src="your-placeholder-image.jpg" alt="Placeholder Image">
+                </div>
+            </div>
+        </section>
+		
+		
+        <section class="s s7">
+            <div class="section-content">
+                <div class="text-column">
+                    <h2>Section Title</h2>
+                    <p>Template description text for this section. Replace with relevant content.</p>
+                </div>
+                <div class="image-column">
+                    <img src="your-placeholder-image.jpg" alt="Placeholder Image">
+                </div>
+            </div>
+        </section>
+		
+		        <section class="s s8">
+            <div class="section-content">
+                <div class="text-column">
+                    <h2>Section Title</h2>
+                    <p>Template description text for this section. Replace with relevant content.</p>
+                </div>
+                <div class="image-column">
+                    <img src="your-placeholder-image.jpg" alt="Placeholder Image">
+                </div>
+            </div>
+        </section>
+		
+		        <section class="s s9">
+            <div class="section-content">
+                <div class="text-column">
+                    <h2>Section Title</h2>
+                    <p>Template description text for this section. Replace with relevant content.</p>
+                </div>
+                <div class="image-column">
+                    <img src="your-placeholder-image.jpg" alt="Placeholder Image">
+                </div>
+            </div>
+        </section>
+		
+		        <section class="s s10">
+            <div class="section-content">
+                <div class="text-column">
+                    <h2>Section Title</h2>
+                    <p>Template description text for this section. Replace with relevant content.</p>
+                </div>
+                <div class="image-column">
+                    <img src="your-placeholder-image.jpg" alt="Placeholder Image">
+                </div>
+            </div>
+        </section>
+		
+		        <section class="s s11">
+            <div class="section-content">
+                <div class="text-column">
+                    <h2>Section Title</h2>
+                    <p>Template description text for this section. Replace with relevant content.</p>
+                </div>
+                <div class="image-column">
+                    <img src="your-placeholder-image.jpg" alt="Placeholder Image">
+                </div>
+            </div>
+        </section>
+		
+		        <section class="s s12">
+            <div class="section-content">
+                <div class="text-column">
+                    <h2>Section Title</h2>
+                    <p>Template description text for this section. Replace with relevant content.</p>
+                </div>
+                <div class="image-column">
+                    <img src="your-placeholder-image.jpg" alt="Placeholder Image">
+                </div>
+            </div>
+        </section>
+		
+		        <section class="s s13">
+            <div class="section-content">
+                <div class="text-column">
+                    <h2>Section Title</h2>
+                    <p>Template description text for this section. Replace with relevant content.</p>
+                </div>
+                <div class="image-column">
+                    <img src="your-placeholder-image.jpg" alt="Placeholder Image">
+                </div>
+            </div>
+        </section>
+		
+		        <section class="s s14">
+            <div class="section-content">
+                <div class="text-column">
+                    <h2>Section Title</h2>
+                    <p>Template description text for this section. Replace with relevant content.</p>
+                </div>
+                <div class="image-column">
+                    <img src="your-placeholder-image.jpg" alt="Placeholder Image">
+                </div>
+            </div>
+        </section>
+		
+		        <section class="s s15">
+            <div class="section-content">
+                <div class="text-column">
+                    <h2>Section Title</h2>
+                    <p>Template description text for this section. Replace with relevant content.</p>
+                </div>
+                <div class="image-column">
+                    <img src="your-placeholder-image.jpg" alt="Placeholder Image">
+                </div>
+            </div>
+        </section>
+		
+		        <section class="s s16">
+            <div class="section-content">
+                <div class="text-column">
+                    <h2>Section Title</h2>
+                    <p>Template description text for this section. Replace with relevant content.</p>
+                </div>
+                <div class="image-column">
+                    <img src="your-placeholder-image.jpg" alt="Placeholder Image">
+                </div>
+            </div>
+        </section>
+		
+		        <section class="s s17">
+            <div class="section-content">
+                <div class="text-column">
+                    <h2>Section Title</h2>
+                    <p>Template description text for this section. Replace with relevant content.</p>
+                </div>
+                <div class="image-column">
+                    <img src="your-placeholder-image.jpg" alt="Placeholder Image">
+                </div>
+            </div>
+        </section>
+		
+		        <section class="s s18">
+            <div class="section-content">
+                <div class="text-column">
+                    <h2>Section Title</h2>
+                    <p>Template description text for this section. Replace with relevant content.</p>
+                </div>
+                <div class="image-column">
+                    <img src="your-placeholder-image.jpg" alt="Placeholder Image">
+                </div>
+            </div>
+        </section>
+		
+		        <section class="s s19">
+            <div class="section-content">
+                <div class="text-column">
+                    <h2>Section Title</h2>
+                    <p>Template description text for this section. Replace with relevant content.</p>
+                </div>
+                <div class="image-column">
+                    <img src="your-placeholder-image.jpg" alt="Placeholder Image">
+                </div>
+            </div>
+        </section>
+
+        <section class="s s20">
+            <div class="section-content">
+                <div class="text-column">
+                    <h2>Section Title</h2>
+                    <p>Template description text for this section. Replace with relevant content.</p>
+                </div>
+                <div class="image-column">
+                    <img src="your-placeholder-image.jpg" alt="Placeholder Image">
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
